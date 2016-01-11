@@ -1,3 +1,5 @@
 _site
 node_modules
 .deploy_git/
+*.log
+public/
