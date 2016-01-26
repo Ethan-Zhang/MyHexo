@@ -5,7 +5,7 @@ tags: [OpenStack, AMQP, kombu]
 &emsp;&emsp;作为一个典型的分布式系统，OpenStack的各模块之间也需要进行大量的消息传递。OpenStack采用的是AMQP的消息队列方案。
 &emsp;&emsp;AMQP是一个广泛使用的消息队列的规范。服务端常采用的是RabbitMQ（在AMQP的规范中，消息队列的服务端被成为broker），现在已收归vmware麾下，使用erlang实现。OpenStack除了支持RabbitMQ之外，还支持apache上开源的Qpid。Qpid有C++和java两种broker的实现。
 >kombu是AMQP协议client端的一个python实现。另有比较常用的有如pika，py-amqplib等。
-
+<!--more-->
 &emsp;&emsp;kombu的特点是支持多种的符合APMQ协议的消息队列系统。不仅支持原生的AMQP消息队列如RabbitMQ、Qpid，还支持虚拟的消息队列如redis、mongodb、beantalk、couchdb、in-memory等。我认为OpenStack使用kombu作为消息队列使用的client库而没有用广泛使用的pika库有两个原因：
 1. kombu除了支持纯AMQP的实现还支持虚拟AMQP的实现作为消息队列系统，如redis、mongodb、beantalk等。众所周知，OpenStack的设计理念及思想为各个组件可以方便的替换、组合，这样用kombu就有了极大的方便，使用者可以依据需要，方便的使用redis等搭建一个openstack的消息系统。
 ```Python
