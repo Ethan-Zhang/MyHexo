@@ -77,6 +77,10 @@ feed:
   path: atom.xml
   limit: 20
 
+social:
+  GitHub: https://github.com/ethan-zhang
+  微博: http://weibo.com/1920663143
+
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
