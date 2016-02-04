@@ -11,7 +11,7 @@ tags: [Tornado, 异步, 开源]
 　　mownfish有以下几个特点：
 1. 生成代码骨架
 　　    mownfish规范了应用的代码结构。如下图所示，cmd中存放的是应用的启动入口，可以以consol_script的形式在setup打包中创建模块的entry_point。wsgi.py是tornado非阻塞server的基础，创建了http_server以及Application的实例。error.py自定义了用户级别的异常，如参数异常，DB异常等。与周期性定时器相关的代码全部放到timer_task.py中。domain模块中存放和handler或与handler相关的类，domain.__init__中定义了应用的路由信息，以应用名为key组织了字典，在wsgi中进行动态的加载。base_handler.py为自定义的handler的基类，实现了几个参数过滤的方法。util模块中存放log、config以及其他通用的方法，db抽象db相关操作。
-![tree](http://7xpwqp.com1.z0.glb.clouddn.com/2013-12-03-01.png) 
+![tree](http://7xpwqp.com1.z0.glb.clouddn.com/2013-12-03-01)
 2. 初始化脚本fishing
 　　通过fishing脚本，可以一键由mownfish部署一个以自己项目名命名的python工程目录，包括日志名，应用路由名等均在脚本中自动修改，并可以自动添加项目权限头。
 ```Bash
@@ -21,3 +21,8 @@ mownfish/script/fishing $dst_path -n $project_name -l $lisense_file
 　　基于后端服务的响应时间、吞吐量等性能的考量，mownfish选择基于tornado2.4版本进行开发，并没有使用最新的3.1版本。在tornado3.x版本之前还没有默认的log模块，所以mownfish自己实现了一个log模块，提供了一个全局logger，方便对access日志和错误日志等进行记录。
 
 　　目前这个生产框架已经在实际在几个项目中应用了，应对敏捷开发上还是很明显的。希望能给应用tornado框架开发的人带来便利，欢迎各种在github上提出issue或直接pull request。如果觉得对你有帮助还请在github上留个星。
+
+***
+__2016-02-02 更新__
+***
+注册了pypi的账号，现在大家可以更方便的试用mownfish了。 `pip install mownfish`

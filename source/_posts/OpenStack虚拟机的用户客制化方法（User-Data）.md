@@ -2,7 +2,7 @@ title: OpenStack虚拟机的用户客制化方法（User Data）
 date: 2012-10-30 11:54:19
 tags: [OpenStack, Nova]
 ---
-![盛大云的用户信息定制界面](http://7xpwqp.com1.z0.glb.clouddn.com/2012-10-30-01.jpg)
+![盛大云的用户信息定制界面](http://7xpwqp.com1.z0.glb.clouddn.com/2012-10-30-01)
 　　很多成熟的公有云产品在申请虚拟机资源的时候，都可以定制客制化的用户信息，如盛大云、阿里云等可以定制虚拟机的服务器名称，用户名及密码口令等。特别是用户口令，虽然OpenStack有非常成熟的公私钥KeyPairs登陆体系，但是对于国内大多开发者还是习惯于用户名口令的登陆方式。某些场景下，服务器管理员在客户现场需要对服务器进行某些简单操作，也许没有SSH环境等，这时如果通过VNC的方式就比较简单，然而KeyPair的登陆方式还不支持VNC模式。
 <!--more-->
 　　在服务器管理员需要使用用户名口令的方式进行登陆的模式下，如果能让用户自己定义用户名口令可以提高一定的安全等级，增加用户对产品的认知和信任度。
@@ -19,10 +19,10 @@ file. Using a mime-multi part file, the user canspecify more than
 one type of data. For example, both a user datascript and a
 cloud-config type could be specified.
 * User-Data Script
-begins with: "#!" or"Content-Type: text/x-shellscript" 
+begins with: "#!" or"Content-Type: text/x-shellscript"
 script will be executed at "rc.local-like" level during first boot.rc.local-like means "very late in the boot sequence"
 * Include File
-begins with "#include" or"Content-Type: text/x-include-url" 
+begins with "#include" or"Content-Type: text/x-include-url"
 This content is a "include" file. The file contains a list of urls,one per line. Each of the URLs will be read, and their content willbe passed through this same set of rules. Ie, the content read fromthe URL can be gzipped, mime-multi-part, or plain text
 * Cloud Config Data
 begins with "#cloud-config" or"Content-Type: text/cloud-config"
@@ -50,7 +50,7 @@ def handle_part(data,ctype,filename,payload):
 ```
 
 　　这里主要关注User-Data Script，其使用的就是常用的shell脚本，我们只要在dashboard创建虚拟机的时候讲脚本写入user data输入框中即可。
-![user-data sample](http://7xpwqp.com1.z0.glb.clouddn.com/2012-10-30-02.png)
+![user-data sample](http://7xpwqp.com1.z0.glb.clouddn.com/2012-10-30-02)
 　　目前还仅仅测试了ubuntu的cloudimage，非UEC镜像即使按照installturtion安装了cloud-init包也没有测试成功，还在查找原因，后面弄好了会接着给大家介绍。
 
 ***

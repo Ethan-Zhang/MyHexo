@@ -92,7 +92,7 @@ def index():
 　　上面的代码也是放到uwsgi的容器里面运行，通过http接口多个并发访问50次，得到的结果是正确的。但是这是为什么呢？在我们原来的python代码中并没有写任何涉及多进程的操作，虽然uwsgi在配置文件中开启了多个线程可以并发的处理请求，但是按笔者原来的理解，不是应该每个线程执行自己独立的Python解释器吗？每个线程在运行python脚本的时候的数据不应该是隔离的吗？
 　　为了弄明白上面的问题，我们不得不研究研究uwsgi及其server架构中的结构和设计。
 　　UWSGI是在python中广泛使用的一个服务器应用容器，类似于php上常见的wsgi协议的服务器应用容器，如mod-php、php-fpm、lightd等。uwsgi协议是在原有的wsgi协议之上新增了一套uwsgi的协议。
-![uwsgi server proto](http://7xpwqp.com1.z0.glb.clouddn.com/2015-01-07-01.png)
+![uwsgi server proto](http://7xpwqp.com1.z0.glb.clouddn.com/2015-01-07-01)
 　　通过研读uwsgi的源码（core/uwsgi.c core/loop.c core/init.c core/master_util.c core/util.c），可以知道uwsgi的server设计，采用的是UNX书中介绍归纳的服务器程序设计范式8，暨TCP预先创建线程服务器程序，每个线程各自accept。
 ```C
 int main(int argc, char *argv[], char *envp[]) {
