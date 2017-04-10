@@ -1,5 +1,5 @@
 # Hexo Configuration
-## Docs: http://hexo.io/docs/configuration.html
+## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
@@ -9,10 +9,6 @@ description: 个人技术博客分享
 author: Ethan Zhang
 language: zh-Hans
 timezone:
-
-avatar: http://7xpwqp.com1.z0.glb.clouddn.com/avatar_01.jpg
-duoshuo_shortname: lightthewoods
-baidu_analytics: 33c8066a182d569550ea355708fe9061
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -44,7 +40,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: true
+  auto_detect: false
   tab_replace:
 
 # Category & Tag
@@ -65,24 +61,12 @@ per_page: 15
 pagination_dir: page
 
 # Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
 theme: next
 
-plugin:
-- hexo-generator-feed
-
-feed:
-  type: atom
-  path: atom.xml
-  limit: 20
-
-social:
-  GitHub: https://github.com/ethan-zhang
-  微博: http://weibo.com/1920663143
-
 # Deployment
-## Docs: http://hexo.io/docs/deployment.html
+## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repository: https://github.com/Ethan-Zhang/Ethan-Zhang.github.io.git
