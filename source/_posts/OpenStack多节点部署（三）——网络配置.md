@@ -7,7 +7,7 @@ tags: [OpenStack]
 * [__OpenStack多节点部署（三）——网络配置__](2013/02/04/OpenStack多节点部署（三）——网络配置/)
 * [__OpenStack多节点部署（四）——KeyStone__](2013/02/04/OpenStack多节点部署（四）——KeyStone/)
 * __OpenStack多节点部署（五）——Nova__
-* __OpenStack多节点部署（六）——glance__
+* [__OpenStack多节点部署（六）——glance__](2013/02/27/OpenStack多节点部署（六）——-Glance/)
 
 　　上一章，我和大家讨论了操作系统安装的方方面面，这章将带来OpenStack的网络配置。
 初接触OpenStack的人，在看了部署文档之后，可能会被Nova-Network，Fix-ip，Floating-ip等概念弄的一头雾水，下面会一一详细道来。

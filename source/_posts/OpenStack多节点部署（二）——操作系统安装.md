@@ -7,7 +7,7 @@ tags: [OpenStack]
 * [__OpenStack多节点部署（三）——网络配置__](2013/02/04/OpenStack多节点部署（三）——网络配置/)
 * [__OpenStack多节点部署（四）——KeyStone__](2013/02/04/OpenStack多节点部署（四）——KeyStone/)
 * __OpenStack多节点部署（五）——Nova__
-* __OpenStack多节点部署（六）——glance__
+* [__OpenStack多节点部署（六）——glance__](2013/02/27/OpenStack多节点部署（六）——-Glance/)
 
 　　上一章，为大家介绍了搭建云计算运营系统的服务器选型，相信经过这段时间，大家都已经成功采购到了符合业务量需求的服务器配置。下面将分享操作系统的安装过程中的思路：
 　　如果您已经从WIKI得到了OpenStack的部署文档，比如`os-compute-starterguide-trunk`，您会发现文档中的安装演示步骤都是以Ubuntu为模板的。这也不足为怪，因为OpenStack基金会与Ubuntu的东家Canonical合作甚密；并且文档是以搭建实验开发平台为读者目标进行编攒的，以Ubuntu的apt-get管理方式进行OpenStack的安装确实也会给初学者带来许多方便。但是，如果您需要搭建一个多节点平台，一个真正需要运营的生产环境，还是建议使用CentOs，或者是商业系统RedHat等。因为毕竟Ubuntu开发中面向的群体主要还是桌面用户，对于服务器的支持并不是十分友好。刚开始接触OpenStack的时候，我也是按照教程使用的Ubuntu12.04作为操作系统，碰到了许多问题，拖延了部署的时间。

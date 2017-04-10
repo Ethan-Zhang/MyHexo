@@ -7,7 +7,7 @@ tags: [OpenStack]
 * [__OpenStack多节点部署（三）——网络配置__](2013/02/04/OpenStack多节点部署（三）——网络配置/)
 * [__OpenStack多节点部署（四）——KeyStone__](2013/02/04/OpenStack多节点部署（四）——KeyStone/)
 * __OpenStack多节点部署（五）——Nova__
-* __OpenStack多节点部署（六）——glance__
+* [__OpenStack多节点部署（六）——glance__](2013/02/27/OpenStack多节点部署（六）——-Glance/)
 
 前面啰嗦了这么多，终于要正式进入OpenStack各组件安装部署的章节了。首先为大家带来的是OpenStack的用户登陆鉴权组件，KeyStone的安装。
 首先，安装mysql服务，并分别创建Nova, glance, swift等组件独立的用户和口令.
