@@ -7,8 +7,8 @@ tags: [Tornado, 协程, 异步]
 ![ppt1](http://7xpwqp.com1.z0.glb.clouddn.com/Tornado%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6%E5%8F%8A%E5%8D%8F%E7%A8%8B%E7%9B%B8%E5%85%B3.001.jpeg)
 ![ppt4](http://7xpwqp.com1.z0.glb.clouddn.com/Tornado%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6%E5%8F%8A%E5%8D%8F%E7%A8%8B%E7%9B%B8%E5%85%B3.004.jpeg)
 ![ppt5](http://7xpwqp.com1.z0.glb.clouddn.com/Tornado%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6%E5%8F%8A%E5%8D%8F%E7%A8%8B%E7%9B%B8%E5%85%B3.005.jpeg)
-![ppt6](http://7xpwqp.com1.z0.glb.clouddn.com/Tornado%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6%E5%8F%8A%E5%8D%8F%E7%A8%8B%E7%9B%B8%E5%85%B3.006.jpeg)
 <!--more-->
+![ppt6](http://7xpwqp.com1.z0.glb.clouddn.com/Tornado%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6%E5%8F%8A%E5%8D%8F%E7%A8%8B%E7%9B%B8%E5%85%B3.006.jpeg)
 ![ppt7](http://7xpwqp.com1.z0.glb.clouddn.com/Tornado%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6%E5%8F%8A%E5%8D%8F%E7%A8%8B%E7%9B%B8%E5%85%B3.007.jpeg)
 ![ppt8](http://7xpwqp.com1.z0.glb.clouddn.com/Tornado%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6%E5%8F%8A%E5%8D%8F%E7%A8%8B%E7%9B%B8%E5%85%B3.008.jpeg)
 ![ppt9](http://7xpwqp.com1.z0.glb.clouddn.com/Tornado%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6%E5%8F%8A%E5%8D%8F%E7%A8%8B%E7%9B%B8%E5%85%B3.009.jpeg)
